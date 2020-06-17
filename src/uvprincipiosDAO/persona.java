@@ -1,10 +1,7 @@
 
-package proyecto1;
-
-import uvprincipiosDAO.departamento;
+package uvprincipiosDAO;
 
 public class persona {
-    
     private String clave;
     private String nombre;
     private String direccion;
@@ -42,7 +39,7 @@ public class persona {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    
+
     public String getDepartamento() {
         return departamento;
     }
@@ -51,8 +48,6 @@ public class persona {
         this.departamento = departamento;
     }
 
-    public void setDepartamento(departamento dep) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
+   
 }

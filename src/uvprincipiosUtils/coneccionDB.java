@@ -1,6 +1,7 @@
 
-package proyecto1;
+package uvprincipiosUtils;
 
+import proyecto1.*;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,15 +19,15 @@ public class coneccionDB {
     }
     
     //conneccion a postgresql
-   coneccionDB(){
+   private coneccionDB(){
         String urlDatabase= "jdbc:postgresql//localhost:5432/";
         try{
             Class.forName("org.postgresql.Driver*");
             con = (coneccionDB) DriverManager.getConnection(urlDatabase, "postgres", "password");
         } catch (Exception ex) {
-            System.out.println("Ocurrio un problema : " + ex.getMessage());
+            System.out.println("Ocurrio un problema : " + e.getMessage());
         }
-        System.out.println("La connexion se realizo sin problemas ");
+        System.out.println("La connexion se realizo sin problemas");
     }
 
     boolean execute(String sql) {

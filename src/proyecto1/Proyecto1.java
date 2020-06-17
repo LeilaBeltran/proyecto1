@@ -18,7 +18,12 @@ public class Proyecto1 {
         p.setTelefono("555");
         
         DAOpersona daop=new DAOpersona();
-         daop.guardar(p);
+         boolean r = daop.guardar(p);
+         if (r)
+             System.out.println("Se guardo correctamente ");
+         else
+             System.out.println("Error ");
+         
     }
     
 }
